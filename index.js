@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import "./controller.js";
 import { create, read, readById, update, del } from "./controller.js";
 import "dotenv/config";
-let url = process.env.URL;
+let url = process.env.dataBaseUrlString;
 mongoose
     .connect(url)
     .then(() => {
